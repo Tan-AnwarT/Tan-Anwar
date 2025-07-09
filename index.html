@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore a variety of indoor plants for your home or office.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indoor Plants</title>
+  <style>
+    body {
+      background-color: #f4fdf4;
+      font-family: 'Segoe UI', sans-serif, Arial;
+      margin: 0;
+      padding: 0;
+      color: #2e473b;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #c0e8d5;
+      padding: 20px;
+      margin: 0;
+      font-size: 2.5rem;
+      border-bottom: 3px solid #a8d5c2;
+    }
+
+    .plant-card {
+      background-color: #ffffff;
+      border: 2px solid #c0e8d5;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .plant-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    }
+
+    .plant-card h2 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 15px auto 5px;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    footer {
+      background-color: #c0e8d5;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      color: #2e473b;
+      border-top: 2px solid #a8d5c2;
+    }
+
+    /* 🌿 Hanging vines */
+    .vine-deco {
+      position: absolute;
+      width: 250px;
+      height: auto;
+      opacity: 0.6;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .vine-top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .vine-top-right {
+      top: 0;
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    .vine-bottom-left {
+      bottom: 0;
+      left: 0;
+      transform: rotate(-90deg);
+    }
+
+    .vine-bottom-right {
+      bottom: 0;
+      right: 0;
+      transform: rotate(90deg) scaleX(-1);
+    }
+
+    .buy-button {
+      background-color: #a8d5c2;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #2e473b;
+      border-radius: 8px;
+      margin: 10px auto 0;
+      display: block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #8dcbb0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .vine-deco {
+        width: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌿 Decorative vines (scrolls with page) -->
+  <img src="https://i.ibb.co/twLrCpqw/c43ea09b643ef257ef7b81153b5a7744-removebg-preview.png" class="vine-deco vine-top-left" alt="Top Left Vine">
+  <img src="https://i.ibb.co/twLrCpqw/c43ea09b643ef257ef7b81153b5a7744-removebg-preview.png" class="vine-deco vine-top-right" alt="Top Right Vine">
+  <img src="https://i.ibb.co/twLrCpqw/c43ea09b643ef257ef7b81153b5a7744-removebg-preview.png" class="vine-deco vine-bottom-left" alt="Bottom Left Vine">
+  <img src="https://i.ibb.co/twLrCpqw/c43ea09b643ef257ef7b81153b5a7744-removebg-preview.png" class="vine-deco vine-bottom-right" alt="Bottom Right Vine">
+
+  <h1>Indoor Plants</h1>
+
+  <div class="plant-card">
+    <h2>Peace Lily</h2>
+    <p>The Peace Lily, known for its elegant white flowers, is a popular choice for indoor spaces.</p>
+    <p><strong>Price:</strong> $15</p>
+    <img src="https://edube.org/uploads/media/default/0001/04/spathiphyllum-peace-lily.jpg" alt="Peace Lily">
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <div class="plant-card">
+    <h2>Zanzibar Gem</h2>
+    <p>The Zanzibar Gem, with its glossy green foliage, is a low-maintenance indoor plant perfect for beginners.</p>
+    <p><strong>Price:</strong> $20</p>
+    <img src="https://edube.org/uploads/media/default/0001/04/zamioculcas-zanzibar-gem.jpg" alt="Zanzibar Gem">
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <footer>
+    🌱 Grown with love Tan ~ 2025
+  </footer>
+
+</body>
+</html>
